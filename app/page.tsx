@@ -59,7 +59,7 @@ function Hero() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <Badge className="mb-4">Available for work</Badge>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            Hi, I'm <span className="text-primary">Mallikarjun</span>
+            Hi, I am <span className="text-primary">Mallikarjun</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
             A passionate frontend developer creating beautiful, responsive web experiences
@@ -121,7 +121,7 @@ function About() {
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
           <p className="text-muted-foreground">
-            I'm a frontend developer with a passion for creating beautiful, responsive, and user-friendly websites. With
+            I am a frontend developer with a passion for creating beautiful, responsive, and user-friendly websites. With
             over 5 years of experience in web development, I specialize in React, Next.js, and modern CSS frameworks.
           </p>
           <p className="text-muted-foreground">
@@ -191,8 +191,15 @@ function Projects() {
     </AnimatedSection>
   )
 }
-
-function ProjectCard({ project, index }: { project: any; index: number }) {
+interface Project {
+  title: string;
+  description: string;
+  image?: string;
+  tags: string[];
+  link: string;
+  github: string;
+}
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
@@ -261,7 +268,7 @@ function Skills() {
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold tracking-tight">Skills & Expertise</h2>
           <p className="text-muted-foreground">
-            I've worked with a variety of technologies and tools in the web development ecosystem.
+            I have worked with a variety of technologies and tools in the web development ecosystem.
           </p>
         </div>
 
@@ -315,7 +322,7 @@ function Contact() {
         <Card>
           <CardHeader>
             <CardTitle>Contact Me</CardTitle>
-            <CardDescription>Fill out the form below and I'll get back to you as soon as possible.</CardDescription>
+            <CardDescription>Fill out the form below and I will get back to you as soon as possible.</CardDescription>
           </CardHeader>
           <CardContent>
             <form className="space-y-4">
