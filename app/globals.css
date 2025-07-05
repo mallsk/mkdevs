@@ -3,6 +3,11 @@
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
+body {
+  font-family: 'General Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #eaeaea;
+  background-color: #121212;
+}
 
 @theme inline {
   --color-background: var(--background);
