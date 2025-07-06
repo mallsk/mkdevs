@@ -78,7 +78,7 @@ export function ContactForm() {
                         value={form.name}
                         onChange={handleChange}
                         placeholder="Your full name"
-                        className="bg-white/50 text-black dark:bg-black/50 border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm"
+                        className="bg-white/50 dark:text-white text-black dark:bg-black/50 border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm"
                         required
                       />
                     </div>
@@ -90,7 +90,7 @@ export function ContactForm() {
                         onChange={handleChange}
                         pattern="\d{10}"
                         placeholder="Your phone number"
-                        className="bg-white/50 text-black dark:bg-black/50 border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm"
+                        className="bg-white/50 text-black dark:text-white dark:bg-black/50 border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm"
                         required
                       />
                     </div>
@@ -104,7 +104,7 @@ export function ContactForm() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="your.email@example.com"
-                      className="bg-white/50 text-black dark:bg-black/50 border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm"
+                      className="bg-white/50 text-black dark:text-white dark:bg-black/50 border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm"
                       required
                     />
                   </div>
