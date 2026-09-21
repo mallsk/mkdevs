@@ -19,7 +19,7 @@ export function Header() {
               />
             </div>
             <span className="lg:text-4xl text-md font-bold text-black dark:text-white">
-              MK DEVS
+              MS Tech Solutions
             </span>
           </div>
 
